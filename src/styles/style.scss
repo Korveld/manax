@@ -1,0 +1,73 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+  --transition-base: .3s cubic-bezier(.25, .1, .25, 1);
+  --primary-gradient: linear-gradient(90deg, rgba(57, 170, 207, 1) 5%, rgba(30, 202, 89, 1) 100%);
+}
+
+@layer components {
+
+  .btn {
+  }
+
+  .btn-primary {
+
+    &:hover {
+    }
+
+    &:active {
+    }
+
+    &:disabled {
+    }
+  }
+
+  .btn-outline-primary {
+
+    &:hover {
+    }
+
+    &:active {
+    }
+
+    &:disabled {
+    }
+  }
+
+  .btn-link {
+
+    &:hover {
+    }
+
+    &:active {
+    }
+  }
+}
+
+@import 'mixins';
+
+/* Plugins */
+@import 'plugins/jquery.fancybox_fix';
+
+@import 'plugins/plugins-rewrite';
+
+/* Global styles */
+@import 'global/global-fonts';
+
+@import 'global/global-typo';
+
+@import 'global/global-scaffolding';
+
+/* Blocks */
+
+@import '../blocks/main/main';
+
+@import '../blocks/section/section';
+
+@import '../blocks/parallax-box/parallax-box';
+
+@import '../blocks/gradient-link/gradient-link';

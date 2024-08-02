@@ -1,0 +1,151 @@
+.parallax-box {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 72%;
+  overflow: hidden;
+  max-width: 1320px;
+  background: theme('colors.blue.DEFAULT');
+  border-radius: 30px;
+
+  @media only screen and (min-width: 1600px) {
+    padding-top: 0;
+    min-height: 1111px;
+  }
+
+  @media only screen and (max-width: theme('screens.smMax.max')) {
+    //padding-top: 126%;
+    padding-top: 0;
+    min-height: 516px;
+  }
+
+  img {
+    pointer-events: none;
+  }
+
+  &__text {
+    position: absolute;
+    z-index: 10;
+    top: 15%;
+    left: 50%;
+    margin: 0 auto;
+    padding: 0 22px;
+    width: 100%;
+    max-width: 1001px;
+    font-size: 6.8vw;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -.5vw;
+    color: theme('colors.white');
+    transform: translate(-50%, 0);
+
+    @media only screen and (min-width: 1600px) {
+      font-size: 106px;
+      line-height: 1;
+      letter-spacing: -8px;
+    }
+
+    @media only screen and (max-width: theme('screens.smMax.max')) {
+      position: relative;
+      top: 0;
+      left: 0;
+      padding-top: 70px;
+      font-size: 32px;
+      line-height: 1.4;
+      letter-spacing: -2px;
+      transform: translate(0, 0);
+    }
+
+    img {
+      width: 20vw;
+
+      @media only screen and (min-width: 1600px) {
+        width: 316px;
+      }
+
+      @media only screen and (max-width: theme('screens.smMax.max')) {
+        width: 102px;
+        min-width: 102px;
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__gr2 {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__mountain2 {
+    position: absolute;
+    z-index: 2;
+    bottom: -5%;
+    left: 0;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__mountain1 {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__gr {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__cloud {
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    bottom: 10%;
+    width: 70%;
+
+    @media only screen and (max-width: theme('screens.sm')) {
+      bottom: 22%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

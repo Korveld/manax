@@ -1,0 +1,165 @@
+h1,
+.h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  @media only screen and (min-width: theme('screens.md')) {
+    font-size: 106px;
+    line-height: 1;
+    letter-spacing: -7px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+
+  @media only screen and (min-width: theme('screens.md')) {
+    font-size: 56px;
+    line-height: 1;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+
+  @media only screen and (min-width: theme('screens.md')) {
+    font-size: 32px;
+    line-height: 1;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 16px;
+  line-height: 33px;
+  font-weight: 500;
+
+  @media only screen and (min-width: theme('screens.md')) {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+
+  @media only screen and (min-width: theme('screens.md')) {
+  }
+}
+
+h6,
+.h6 {
+
+  @media only screen and (min-width: theme('screens.md')) {
+  }
+}
+
+p,
+.p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+
+  @media only screen and (min-width: theme('screens.sm')) {
+  }
+
+  .p-sm {
+  }
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+a {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+hr {
+}
+
+ul {
+
+  li {
+  }
+}
+
+ol {
+
+  li {
+  }
+}
+
+table {
+}
+
+tr {
+}
+
+th {
+}
+
+td {
+}
+
+input {
+
+  &:focus {
+    outline: none;
+  }
+}
+
+textarea {
+
+  &:focus {
+    outline: none;
+  }
+}
+
+select {
+}
+
+button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type='submit'] {
+  border: 0;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+div,
+a,
+a:active,
+a:focus {
+  outline: none;
+}
